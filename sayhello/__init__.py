@@ -20,3 +20,8 @@ bootstrap = Bootstrap(app)
 moment = Moment(app)
 
 from sayhello import views, errors, commands
+
+
+# if __name__ == '__main__':
+#     # unittest.main()
+#     app.run(debug=True)

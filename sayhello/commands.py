@@ -38,7 +38,8 @@ def forge(count):
     for i in range(count):
         message = Message(
             name=fake.name(),
-            body=fake.sentence(),
+            s_date=fake.date_time_this_month(),
+            e_date=fake.date_time_this_month(),
             timestamp=fake.date_time_this_year()
         )
         db.session.add(message)
