@@ -16,4 +16,5 @@ class Message(db.Model):
     name = db.Column(db.String(20))
     s_date = db.Column(db.String(30))
     e_date = db.Column(db.String(30))
+    all_date = db.Column(db.String(30))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)

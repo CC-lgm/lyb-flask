@@ -27,3 +27,7 @@ class EditForm(FlaskForm):
 
 class DeleteForm(FlaskForm):
     submit = SubmitField('删除签到记录')
+
+
+class SignForm(FlaskForm):
+    submit = SubmitField('签到')

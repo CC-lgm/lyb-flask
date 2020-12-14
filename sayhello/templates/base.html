@@ -15,6 +15,15 @@
             <a href="{{ url_for('index') }}" class="text-success"><strong>签到</strong></a>
             <small class="text-muted sub-title">坚持每日学习！</small>
         </h1>
+        <div>
+{#            <a href="{{ url_for('sign') }}">#}
+{#        <input name="签到" type="button" class="btn btn-success pull-right" value="签到">#}
+{#        </a>#}
+            <form method="post" action="{{ url_for('sign') }}">
+                    {{ form.csrf_token }}
+                    {{ form.submit(class='btn btn-success pull-right') }}
+                </form>
+        </div>
     </header>
     {% for message in get_flashed_messages() %}
         <div class="alert alert-info">
